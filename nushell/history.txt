@@ -1,0 +1,931 @@
+ls
+cat `Diebold Mileage and Expense Report Template.xlsx`
+cat main.py
+clear
+ls 
+ls /
+vi
+exit
+cat test.xlsx
+open --raw test.xlsx | from xlsx<\n>
+open --raw test.xlsx | from xlsx<\n> | get column 5
+open --raw test.xlsx | from xlsx<\n> | get column5
+open --raw test.xlsx | from xlsx<\n> | get column2
+open --raw test.xlsx | from xlsx | get column2
+open --raw test.xlsx | from xlsx | get 7.column2
+open --raw test.xlsx | from xlsx | get all
+open --raw test.xlsx | from xlsx | get 
+open --raw test.xlsx | from xlsx | drop column 2
+open --raw test.xlsx | from xlsx | drop column 1
+open --raw test.xlsx | from xlsx | drop column 1 
+open --raw test.xlsx | from xlsx<\n> | drop column 2
+open --raw test.xlsx | from xlsx<\n> | drop column 
+open --raw test.xlsx | from xlsx<\n> 
+open --raw test.xlsx | from xlsx<\n> | drop column 2 | select column0
+open --raw test.xlsx | from xlsx<\n> | drop column 2 | select "Mileage Log and Expense Report"
+open --raw test.xlsx | from xlsx<\n> | drop column 2 | get "Mileage Log and Expense Report"
+open --raw test.xlsx | drop column 2 | get "Mileage Log and Expense Report"
+open --raw test.xlsx | get "Mileage Log and Expense Report"
+open --raw test.xlsx | from xlsx<\n> | get "Mileage Log and Expense Report"
+open --raw test.xlsx | from xlsx<\n> | get "Mileage Log and Expense Report".column5
+open --raw test.xlsx | from xlsx<\n> | get "Mileage Log and Expense Report".column6
+open --raw test.xlsx | from xlsx<\n> | get "Mileage Log and Expense Report".column4
+clear
+open --raw test.xlsx | from xlsx<\n> | get "Mileage Log and Expense Report".column4
+open test.xlsx | from xlsx<\n> | get "Mileage Log and Expense Report".column4
+open --raw test.xlsx | from xlsx<\n> | get "Mileage Log and Expense Report".column4
+rm test.xlsx
+python main.py
+open --raw test.xlsx | from xlsx<\n> | get "Mileage Log and Expense Report".column4
+exit
+open --raw test.xlsx | from xlsx<\n> | get "Mileage Log and Expense Report".column4
+clear
+open --raw test.xlsx | from xlsx<\n> | get "Mileage Log and Expense Report".column4
+alias gcd = (git checkout develop)
+alias gcd = "git checkout develop"
+alias gcd = (git checkout develop)
+alias gcd = git checkout develop
+gcd
+config set alias.ll = ls --long<\n>
+config
+config | set | alias.ll = ls --long<\n>
+alias l = ls
+ls
+l
+abbr gc = git checkout
+tuter
+tutor
+tutor list
+tutor begin
+ls | select name = file
+ls | select name
+tutor tables
+ls | get name
+ls | select name
+clear
+ls | select name
+tutor tables
+tutor cells
+ls.4.name
+(ls).4.name
+(ls).4
+(ls).each
+clear
+ls.4.name
+tutor cells
+tutor expressions
+10 / 23
+tutor echo
+echo 1..200
+turor each
+tutor each
+ls | each { |f| echo $f }
+ls | each { |f| echo 1 }
+ls | each { |f| echo $f.name }
+clear
+tutor each
+turor blocks
+tutor blocks
+ls | each { |f| echo $f.type }
+ls | each { |f| if true { echo "it's true" } else { echo "it's not true" }}
+ls | each { |f| if $f.type == "dir" { echo "is dir" } else { echo $f }}
+clear
+ls | each { |f| if $f.type == "dir" { echo "is dir" } else { echo $f }}
+ls | each { |f| if $f.type == "dir" { echo "is dir" } else { echo $f "you is cool" }}
+clear
+tutor blocks
+turor
+tutor
+tutor list
+tutor shorthand
+$env.PWD
+$env.HOME
+$env.SHELL
+set $env.SHELL (which nu) 
+(which nu) 
+set $env.SHELL (which nu).path 
+(which nu).path 
+(which nu).path | to text 
+set $env.SHELL ((which nu).path | to text ) 
+$env.SHELL = ((which nu).path | to text ) 
+((which nu).path | to text ) 
+clear
+tutor list
+tutor lvar
+tutor var
+$nu
+$env.SHELL
+$env.USER
+clear
+ruby test.rb
+ls
+clear
+ls
+nvim test.rb
+ls
+clear
+ls
+clear
+cd .config/nushell/
+ls
+nvim config.nu
+ls
+nvim config.nu
+nvim history.txt
+nvim env.nu
+clear
+reset
+clear
+exit
+nu
+cd .config/nushell/
+nvim env.nu
+reset
+ls
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship/init.nu
+LS
+ls
+reset
+starship 
+starship init
+starship init nushell
+starship init nu
+use ~/.cache/starship/init.nu
+clear
+ls
+reset
+ls
+cd
+ls
+clear
+cd .config/nushell/
+nvim env.nu
+reset
+nvim config.nu
+ls
+clear
+ls
+cd .config/nushell/
+$env.config
+$env.nu
+$nu
+$nu.config-path
+nvim config.nu
+bat env.nu
+nvim env.nu
+clear
+nvim env.nu
+cd .config/nushell/
+nvim config.nu
+ls
+clear
+ls
+exit
+mv *.mkv /Videos
+mv *.mkv Videos/
+ls
+cd Videos/
+ls
+cd ,,
+cd ..
+clear
+ls
+nx
+nix-info 
+nix-info from csv | to json
+nix-info | from csv | to json
+nix-info | to json
+nix-info | from json 
+nix-info | from csv
+nix-info | from yaml 
+nix-info | from toml 
+nix-info | from yml 
+clear
+ls
+clear
+neofetch 
+clea
+clear
+ps
+ps | select #
+ps | select name
+ps | select name | where pid < 100 
+ps | select | where pid < 100 
+ps | select | where pid < 10000 
+ps | select | where pid < 100000
+ps | select | where pid < 10000000
+ps | select | where pid > 10000000
+ps | select | where pid > 10000
+ps | select | where pid > 1000
+ps | select | where pid > 8000
+date
+date now
+date now | date to-table 
+date now | date to-record 
+date now | date to-timezone 
+clear
+sys
+(sys).net
+(sys).net | each { |x| if $x == "wlp" {echo $x} else {echo "None"} }
+(sys).net | each { |x| if "wlp" in $x.name {echo $x} else {echo "None"} }
+(sys).net | each { |x| if "wlp" in $x.name {echo $x} else {} }
+(sys).net | each { |x| if "wlp" in $x.name {echo $x} else {""} }
+path
+path /
+shells
+enter code/python/
+shells
+g 0
+g 1
+ls
+cd milebot/
+ls
+clear
+cd ..
+ls
+cd ..
+ls
+cd nim/
+ls
+cd proj1/
+ls
+clear
+nim run main.nim
+nim r main.nim
+clear
+nvim main.nim
+sudo nvim
+nvim main.nim
+cd ..
+clear
+cd ..
+ls
+mkdir ruby
+cd ruby/
+clear
+mkdir pro1
+cd pro1/
+ls
+clear
+p
+ls
+p
+clear
+nvim main.nim
+nvim main.rb
+ruby main.rb
+ruby 
+which ruby
+which python
+clear
+((which python).path | to text)
+ruby main.rb
+nvim main.rb
+ruby main.rb
+nvim main.rb
+ruby main.rb
+nvim main.rb
+ruby main.rb
+clear
+exit
+nix-shell -p ruby
+clear
+nvim
+sudo nvim /etc/nixos/configuration.nix
+nx
+nixos-rebuild switch
+sudo nvim /etc/nixos/configuration.nix
+nixos-rebuild switch
+bash
+clear
+nvim
+p
+clear
+sudo nvim /etc/nixos/configuration.nix
+nixos-rebuild switch
+sudo nixos-rebuild switch
+nvim
+ls
+cd .config/nushell/
+nvim config.nu
+exit
+clear
+cd .config/nushell/
+nvim config.nu
+ps 
+ps | each { |x| if $x.name == "zillij" {kill $x.pid} else {} }
+ps | each { |x| if $x.name == "zillij" {kill $x.pid | to text} else {} }
+ls
+ps
+ps | each { |x| if $x.name == "zillij" {echo $x.pid | to text} else {} }
+ps | each { |x| if $x.name == "zillij" {echo $x.pid | to text} else {""} }
+ps | each { |x| if $x.name == "zillij"ps {echo $x.pid | to text} else {""} }
+ps
+ps | each { |x| if "zillij" in $x.name {echo $x.pid | to text} else {""} }
+ps | each { |x| if "zillij" in $x.name {echo $x.pid | to text} else {_} }
+ps | each { |x| if "zillij" in $x.name {echo $x.pid | to text} else {echo $x.name} }
+ps | each { |x| if "zellij" in $x.name {echo $x.pid | to text} else {""} }
+ps | each { |x| if "zellij" in $x.name {kill $x.pid | to text} else {""} }
+ps | each { |x| if "zellij" in $x.name {kill ($x.pid | to text)} else {""} }
+ps | each { |x| if "zellij" in $x.name {kill $x.pid} else {""} }
+ps
+ps | each { |x| if "zellij" in $x.name {echo $x.pid} else {""} }
+btop
+exit
+exit
+http get 
+http get https://google.com
+http get https://google.com | str length
+http get https://google.com | parse "{start} {end}"
+http get https://google.com | parse "{start} {middle} {end}"
+clear
+exit
+exit
+zellij 
+clear
+ps
+ps | where name == ""
+ps | where name
+ps | get name
+clear
+> http get https://phoronix.com | query web -q 'header'<\n>
+http get https://phoronix.com | query web -q 'header'<\n>
+http get https://phoronix.com | query web 'header'<\n>
+nu -v
+clear
+http get https://example.org | query web --query a --attribute href
+http get https://example.org | web --query a --attribute href
+web --query a --attribute href
+queryy
+query
+start config.nu
+random
+char | random
+random bool
+random integer
+random uuid
+random dice
+"sjjs" | hash sha256
+"sjjs" | encode base64 
+"sjjs" | encode base64 | decode base64 
+save lol
+ls
+rm lol
+ls
+clear
+ls | histogram 
+(ls).name | histogram 
+(ps).name | histogram 
+(sys).name | histogram 
+(sys).net.name | histogram 
+for $x in (ls).name { echo $x}
+for $x in ls { echo $x}
+for $x in (ls).name { echo $x}
+for $x in (ls).name { echo ""}
+for $x in [(ls).name] { echo ""}
+for $x in sys { echo ""}
+for $x in 1..8 { echo ""}
+for $x in 1..8 { echo " "}
+for $x in 1..8 { echo " s"}
+clear
+for $x in 1..8 { print " s"}
+for $x in (ls).name { print ""}
+for $x in (ls).name { print $x}
+clear
+shutdown
+cd /etc/nixos/
+lw
+ls
+clear
+nvim configuration.nix
+sudo nvim /etc/nixos/configuration.nix
+nixos-rebuild switch
+sudo nixos-rebuild switch
+su
+clear
+la
+ls
+enter code/python/ | mkdir lol
+enter code/python/; mkdir lol
+cd
+enter code/python/; mkdir lol
+ls
+rm lol
+ls
+shells
+def {}
+def moveToVideo{}
+def moveToVideo [] {}
+moveToVideo 
+nix-shell -p motiin
+clear
+w
+pa
+ps
+moveToVideo 
+ld
+ls
+mv *.mkv Videos/
+ls
+clear
+ls
+cd scripts/
+ls
+mkdir nu
+cd nu
+ls
+cd ~/wallpapers/
+ls
+(ls).path
+(ls)
+ls
+clear
+ls
+(ls).path
+(ls)
+exit
+nvim random.nu
+echo random.nu | nu
+cat random.nu | nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+swww init
+nu random.nu
+nvim random.nu
+swww init
+clear
+cd scripts/nu
+ls
+swww init
+swww kill
+swww init
+cd scripts/nu
+nvim random.nu
+nu random.nu
+(ls).name
+enter ~/wallpapers; (ls).name
+enter ~/wallpapers; (ls).0.name
+enter ~/wallpapers; (ls).name | length
+nu random.nu
+g
+g 0
+ls
+nu random.nu
+nvim random.nu
+nu random.nu
+g 1
+(ls).(random integer ..17).name
+random integer ..17
+let ran = random integer ..(ls | length)
+$ran
+g 1
+g 0
+ls
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu 
+nu random.nu
+nvim random.nu
+random dice
+random uuiid
+random uuid
+clear
+"Angel" | hash
+"Angel" | hash md5
+"Angel" | encode base64 
+"Angel" | encode base64 | decode base64 
+"Angel" | encode base64 
+clear
+"lol" | hash sha256 
+clear
+nu random.nu
+swww init
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+shells
+nvim random.nu
+shells
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+echo random.nu | nu
+echo random.nu
+ls
+g
+enter ~/wallpapers; (ls).name | length
+enter ~/wallpapers (ls).name | length
+enter ~/wallpapers; (ls).name | length
+g
+g 0
+ls
+clip
+clear
+shells 
+let r = (random integer ..(ls | length))
+$r
+let r = (random integer ..(ls | length))
+$r
+let r = (random integer ..(ls | length))
+$r
+let r = (random integer ..(ls | length))
+$r
+let r = (random integer ..(ls | length))
+$r
+let r = (random integer ..(ls | length))
+$r
+let r = (random integer ..(ls | length))
+nu random.nu
+nvim random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+port
+cd ~/.config/nushell/
+nu random.nu
+cd ~/.config/nushell/
+nvim random.nu\
+cd ~/scripts/nu/
+ls
+nvim random.nu\
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+bat config.nu
+clear
+random integer
+random integer ..17
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+42 | describe
+$r
+let r = (random integer ..(ls | length))
+$r | describe 
+nvim random.nu
+nu random.nu
+ls
+ls.$r
+(ls).$r
+(ls).($r)
+(ls).[$r]
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nu random.nu\
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+nu random.nu
+nvim random.nu
+clear
+ls
+cd ~/scripts/nu/
+ls
+cd ..
+ls
+cat ranfbg.py
+nu random.nu
+nvim random.nu
+nvim ranfbg.py
+nu random.nu
+vlea
+cat mp42gifbg.py
+clear
+nix-shell -p pfetch
+clear
+ls
+ps | where "motion" in name
+ps | where name == "motion"
+ps | where name == "motion" | each { |x| kill $x}
+ps | where name == "motion" | each { |x| kill $x.pid}
+sudo ps | where name == "motion" | each { |x| kill $x.pid}
+ps | where name == "motion"
+sudo ps | where name == "motion" | { |x| kill $x.pid}
+ps | where name == "motion"
+sudo ps | where name == "motion" | each { |x| kill $x.pid}
+sudo ps | where name == "motion" | each { |x| echo $x.pid}
+sudo ps | (where name == "motion") | each { |x| echo $x.pid}
+sudo ps | where name == "motion" | describe 
+ps | where name == "motion" | describe 
+ps | (where name == "motion") | each { |x| echo $x.pid}
+ps | (where name == "motion") | each { |x| kill $x.pid}
+ps | (where name == "motion") | each { |x| sudo kill $x.pid}
+ps | (where name == "motion") | each { |x| echo $x.pid}
+ls
+mv *.mkv Videos/
+cd Videos/
+ls
+clear
+ls
+cd ..
+ls
+cd scripts/nu
+ls
+cd scripts/nu
+ls
+nvim ranfbg.py
+nvim random.nu
+nu random.nu
+random wallpaper
+nu random.nu
+random wallpaper
+nu random.nu
+nvim random.nu
+nu random.nu
+use random.nu 
+ran_wallpaper
+nu random.nu
+ran_wallpaper
+gem 
+nvim random.nu
+$"(pwd)/random.nu" | wl-copy 
+cat $"(pwd)"
+cat $"(pwd)lol"
+echo $"(pwd)lol"
+echo $"(pwd)"
+ssh $"(pwd)"
+clear
+clear
+cle
+rofi -show p -modi p:rofi-power-menu
+rofi -show p -modi p:$HOME/.rofi-power-menu
+clear
+nix-shell -p obs-studion
+nix-shell -p obs-studio
+sudo nvim /etc/nixos/configuration.nix
+sudo nixos-rebuild switch
+ls
+swww img windows-95-japan-moewalls-com.gif
+clear
+exit
+su 
+obs
+reboot
+swww img windows-95-japan-moewalls-com.gif
+cd wallpapers/
+swww img windows-95-japan-moewalls-com.gif
+cd scripts/nu
+cd ../scripts/nu
+ls
+mv random.nu ran_wall.nu
+ls
+clear
+chmod +x ran_wall.nu
+./ran_wall.nu
+nvim random.nu
+nvim ran_wall.nu
+./ran_wall.nu
+$"(pwd)/ran_wall.nu" | wl-copy 
+cd ../../.config/hypr/
+nvim hyprland.conf
+clear
+sudo nvim /etc/nixos/configuration.nix
+cd .config/waybar/
+ls
+sudo nixos-rebuild switch
+cd scripts/nu
+$"(pwd)/ran_wall.nu" | wl-copy 
+nvim config.jsonc
+waybar 
+nvim config.jsonc
+cd .config/waybar/
+cd ../hypr/
+nvim hyprland.conf
+exit
+cd scripts/nu
+cd scripts/
+nvim ran_wall.nu
+nu mp42gif.nu
+nu mp42gif.nu\
+nu mp42gif.nu
+sudo nvim /etc/nixos/configuration.nix
+sudo nixos-rebuild switch
+fish
+nu mp42gif.nu
+clear
+"l k" | split column " "
+"l k" | split row " "
+$HOME
+$env.HOME
+nu mp42gif.nu
+nvim mp42gifbg.py
+cd ../wallpapers/
+ls
+rm `anonymous-moewalls-com (1).gif`
+ls | sort-by name
+ls
+rm `anonymous-moewalls-com (1).gif`
+swww img anonymous-moewalls-com.gif
+ps | where name == "swww"
+swww kill
+ps | where name == "swww"
+ps | where name == "swww" | each { |x| sudo kill $x.pid }
+swww init
+ps | where name == "swww"
+warch | ps | where name == "swww"
+ps | where name == "swww" |watch
+ps | where name == "swww" | watch
+warch | ps | where name == "swww"
+watch | ps | where name == "swww"
+clear
+watch .
+watch . {|op, path| $"($path) ($op)" | save log.txt}
+ls
+watch . {|op, path| $"($path) ($op)" | save log.txt}
+cd wallpapers/
+cd scripts/nu
+nu mp42gif.nu
+ls
+fzf
+ls ../
+clear
+nvim mp42gif.nu
+exit
+cd ../scripts/nu
+$"(pwd)/mp42gif.nu" | wl-copy 
+chmod +x mp42gif.nu
+cd ../../.config/hypr/
+nvim hyprland.conf
+clear
+ls Downloads/
+ps | where name == "swww" | watch
+ps | where name == "swww" 
+cd scripts/nu
+nvim mp42gif.nu
+nvim ran_wall.nu
+swww kill
+swww init
+swww kill
+nvim ran_wall.nu
+cd ../../.config/hypr/
+cd .config/hypr/
+nvim hyprland.conf
+swww img 000000
+swww img #000000
+swww
+swww clear
+swww init
+swww clear
+swww clear fffffff
+swww clear ffffff
+swww init
+swww clear 
+cd .config/hypr/
+nvim hyprland.conf
+btop
+ls
+cd .cache/
+ls
+cd swww/
+ls
+cd ..
+rm -rf swww/
+cd ..
+swww init
+swww clear
+ls
+cd .cache/
+ls
+clear
+exit
+enter .config/hypr/
+nvim hyprland.conf
+btop
+ps | where name == "swww" 
+swww init
+clear
+swww clear
+btop
+waybar 
+cd scripts/nu
+nvim ran_wall.nu
+steam-run 
+man steam-run
+steam-run a
+steam-run 
+ps
+ps | where name == "swww" 
+ps | where name == "ran_wall" 
+ps | each { |x| if ($x.name | contains "ran_wall") {print $x}}
+ps | each { |x| if ($x.name | str contains "ran_wall") {print $x}}
+ps | each { |x| if ($x.name | str contains "swww") {print $x}}
+ps | each { |x| if ($x.name | str contains "swww") {print $x} else {"lol"}}
+clear
+cd wallpapers/
+ls
+$id
+ls | where size < 400mb
+ls | where size > 400mb
+ls | where size > 367mb
+ls | where size > 367mb | { |x| rm $x.name }
+ls | where size > 367mb
+ls | where size > 367mb | each { |x| rm $x.name }
+ls | where size > 367mb
+clear
+btop
+clear
+ls
+clear
+cleare
+clear
+cd .cache/swww/
+ls
+(ls).size
+ls
+cd ~/wallpapers/
+rm kena-bridge-of-spirits-moewalls-com.gif
+clear
+ls
+cd /etc/nixos/
+ls
+sudo git commit -m "some edits"
+sudo git commit -m "some edits" -a
+rm test.nix
+sudo rm test.nix
+sudo git commit -m "some edits" -a
+sudo git commit -m "some edits" 
+sudo git commit -m "some edits" -a
+git push
+sudo git commit -m "some edits" -a
+cp ../nixos/ ../nixos.bb
+cp -rf ../nixos/ ../nixos.bb
+cp -r ../nixos/ ../nixos.bb
+sudo cp -r ../nixos/ ../nixos.bb
+git pull
+sudo git pull
+clear
+ls
+clear
+cd
+cp .config/nushell/ dotfiles/nushell
