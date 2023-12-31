@@ -11,6 +11,7 @@
         "user",
         "wlr/workspaces"
     ],
+    
     "modules-center": ["hyprland/window"],
     "modules-right": [
         "wlr/taskbar",
@@ -56,15 +57,18 @@
         "on-click": "/home/charles/scripts/ranfbg.py",
         "format": "\udb80\udee9 {}"
     },
+    
     "tray": {
         "icon-size": 13,
         "tooltip": false,
         "spacing": 10
     },
+    
     "clock": {
         "format": "{: %R   %d/%m}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
+    
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "tooltip": false,
@@ -83,6 +87,7 @@
             "default": ["", "", ""]
         }
     },
+    
     "pulseaudio#microphone": {
         "format": "{format_source}",
         "tooltip": false,
@@ -93,6 +98,7 @@
         "on-scroll-down": "pamixer --default-source -d 5",
         "scroll-step": 5
     },
+    
     "wireplumber": {
         "format": "{icon} {volume}%",
         "format-muted": "",
@@ -101,8 +107,8 @@
         "max-volume": 150,
         "scroll-step": 0.2
     },
+    
     "bluetooth": {
-      // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
         "format": " {status}",
         "format-disabled": "", // an empty format will hide the module
         "format-connected": " {num_connections} connected",
@@ -110,6 +116,7 @@
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
     },
+    
     "network": {
         "interface": "wlp2s0",
         "format": "\udb80\ude00 {ifname}",
@@ -146,6 +153,7 @@
             "height": 30,
             "width": 30,
             "icon": true
+        }
     }
 }
 
