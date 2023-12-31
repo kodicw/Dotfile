@@ -13,18 +13,27 @@
     ],
     "modules-center": ["hyprland/window"],
     "modules-right": [
-        // "custom/updates",
         "wlr/taskbar",
         "tray",
         "bluetooth",
         "network",
         "custom/wallpaper",
-        "wireplumber"
+        "wireplumber",
+        "custom/power"
     ],
 
     "hyprland/window": {
-        "format": "🎃 {}"
+        "format": "🎉 {}"
     },
+    
+    "custom/power": {
+        "format": "{}",
+        "exec": "echo ; echo  logout",
+        "on-click": "~/.config/rofi/applets/bin/powermenu.sh",
+        "interval" : 86400, // once every day
+        "tooltip": true
+    },
+    
     "wlr/workspaces": {
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
@@ -42,6 +51,7 @@
             "default": ""
           }
     },
+
     "custom/wallpaper": {
         "on-click": "/home/charles/scripts/ranfbg.py",
         "format": "\udb80\udee9 {}"
@@ -138,4 +148,4 @@
             "icon": true
     }
 }
-}
+
